@@ -9,6 +9,38 @@
 
     <!-- Including the Font Awesome CSS library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- CSS styling for table-->
+    <title>Styled Table</title>
+    <title>Styled Table</title>
+    <style>
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .styled-table th, .styled-table td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: left;
+        }
+
+        .styled-table th {
+            background-color: #10804c;
+            font-weight: bold;
+            color: white
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .styled-table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,11 +49,11 @@
     <div class="topnav" id="myTopnav">
         <!-- Links to different sections -->
         <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
+        <a href="section1.html">Business</a>
+        <a href="section2.html">Rules</a>
 
         <!-- Active link pointing to the section3.html page -->
-        <a class="active" href="section3.html">Section 3</a>
+        <a class="active" href="section3.html">FIFA Men's World Rankings</a>
 
         <a href="see_also.html">See Also</a>
         <a href="references.html">References</a>
@@ -35,8 +67,73 @@
     <!-- Page content -->
     <div class="content">
         <!-- Section 3 content -->
-        This is section 3.
+        <h2>Current FIFA Men's World Rankings as of October 26 2023.</h2>
+        <br>
+            <p>Visit the official FIFA World Ranking page for the ranking procedure:</p>
+        <a href="https://www.fifa.com/fifa-world-ranking/procedure-men">FIFA World Ranking Procedure</a>
     </div>
+
+    <table class ="styled-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Total Points</th>
+                <th>Previous Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Argentina</td>
+                <td>1861.29</td>
+                <td>1851.41</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>1853.11</td>
+                <td>1840.76</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>1812.02</td>
+                <td>1837.61</td>
+            </tr>
+            <tr>
+                <td>England</td>
+                <td>1807.88</td>
+                <td>1794.34</td>
+            </tr>
+            <tr>
+                <td>Belgium</td>
+                <td>1793.71</td>
+                <td>1792.64</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>1739.83</td>
+                <td>1728.58</td>
+            </tr>
+            <tr>
+                <td>Netherlands</td>
+                <td>1739.26</td>
+                <td>1743.15</td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td>1725.97</td>
+                <td>1710.72</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td>1717.81</td>
+                <td>1727.37</td>
+            </tr>
+            <tr>
+                <td>Croatia</td>
+                <td>1711.88</td>
+                <td>1747.83</td>
+            </tr>
+        </tbody>
+    </table>
 
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>

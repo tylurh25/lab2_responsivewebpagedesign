@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>GEOG 328 LAB 02 EXAMPLE</title>
+    <title>Football/Soccer</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
@@ -19,9 +19,9 @@
         <a class="active" href="index.html">Abstract</a>
 
         <!-- Links to other sections -->
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
+        <a href="section1.html">Business</a>
+        <a href="section2.html">Rules</a>
+        <a href="section3.html">FIFA Men's World Rankings</a>
 
         <!-- Additional links -->
         <a href="see_also.html">See Also</a>
@@ -36,20 +36,54 @@
     <!-- Page content -->
     <div class="content">
         <!-- Abstract section -->
-        This is the abstract section.
+        <p>Football or soccer is a very popular team sport that is played between <em>two</em> teams of <strong>11 players</strong>. 
+        The object of the game is to move the ball up the <strong>pitch</strong>, a rectangular field and past the opposing teams goal line. 
+        A standard game lasts <strong>90 minutes</strong> split into <em>two</em> halves of 45 minutes. </p>
         <br>
         <br>
         <!-- Displaying the course cover image in a scaled size -->
-        Here is the course cover image in a scaled size:
+        Here is an image of Lionel Messi(a famous football player):
         <br>
-        <img src="img/cover.jpg" style="width: 100%; height: auto;">
+        <img src="https://media.npr.org/assets/img/2023/07/24/gettyimages-1565639844-77a6567b6ac6c2ea8f4d3c590508689df8ce9cc3-s1600-c85.webp" style="width: 100%; height: auto;">
         <br>
         <br>
-        <!-- Displaying the course cover image in its original size -->
-        Here is the course cover image in its original size:
-        <img src="img/cover.jpg">
     </div>
 
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://fivethirtyeight.com/wp-content/uploads/2022/11/GettyImages-1442587075-e1668806020544.jpg?w=917" style="width:100%">
+        <div class="text">FIFA World Cup Football/ Soccer ball</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://cdn.vox-cdn.com/thumbor/Ab_0bodZ1DFzXBqd6OyBvKw1ZIk=/0x0:3583x2385/1820x1213/filters:focal(1506x907:2078x1479):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54395345/628456070.0.jpg" style="width:100%">
+        <div class="text">Real Madrid vs Barcelona 2017(Ronaldo in white)</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://images.mlssoccer.com/image/private/t_q-best/mls-sea-prd/ut5fjkgbs4l2jbfaplqx.jpg" style="width:100%">
+        <div class="text">The Seattle Sounders, Seattles local team </div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>
 
